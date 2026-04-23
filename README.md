@@ -1,4 +1,3 @@
-````md
 # Harness Engineering
 
 Repositório canônico da engenharia de harness e agentes.
