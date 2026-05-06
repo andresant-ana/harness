@@ -1,0 +1,40 @@
+{
+    "_adapter": "opencode",
+    "_status": "placeholder-conservador",
+    "_purpose": "Registrar a presença do adapter OpenCode sem inventar schema executável não validado.",
+    "_warning": "Não tratar este arquivo como configuração runtime final até validar o schema da versão instalada do OpenCode.",
+    "_canonical_sources": [
+        "core/constitution/",
+        "core/protocols/",
+        "core/policies/",
+        "core/artifacts/",
+        "core/taxonomy/",
+        "core/observability/",
+        "core/governance/",
+        "skills/",
+        "agents/",
+        "templates/"
+    ],
+    "_adapter_sources": [
+        "adapters/opencode/README.md",
+        "adapters/opencode/AGENTS.md",
+        "adapters/opencode/agents/",
+        "adapters/opencode/commands/",
+        "adapters/opencode/mcp/",
+        "adapters/opencode/plugins/",
+        "adapters/opencode/permissions/"
+    ],
+    "_intended_runtime_rules_file": "adapters/opencode/AGENTS.md",
+    "_risk_policy": {
+        "R0": "leitura-investigacao-sem-mutacao",
+        "R1": "mudanca-local-pequena-reversivel",
+        "R2": "mudanca-funcional-relevante",
+        "R3": "mudanca-estrutural-sensivel-sistemica",
+        "R4": "producao-segredo-irreversibilidade-alto-risco"
+    },
+    "_default_mcp_mode": "read-only",
+    "_external_writes": "proibidas-sem-autorizacao-explicita",
+    "_production_access": "proibido-sem-autorizacao-explicita",
+    "_secrets_handling": "nunca-expor-valores-reais",
+    "_next_validation_step": "Validar schema real do opencode.json contra a versao instalada do OpenCode antes de transformar este placeholder em configuracao executavel."
+}
